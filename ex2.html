@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+ let livros = [
+      {
+ titulo: "Le Petit Prince ",
+ autor: "Antoine de Saint-Exupéry",
+ ano: 1943,
+ emprestado: false,
+ categorias: ["Fantasia", "Aventura"],
+ revisoes: [
+{
+ comentario: "Fantástico!",
+ avaliacao: 5
+    },  {
+           comentario: "Adorei o mundo construído.",
+           avaliacao: 4
+                    }
+                ]
+            },
+               
+            
+            {
+    titulo: "1984",
+    autor: "George Orwell",
+    ano: 1949,
+    emprestado: false,
+    categorias: ["Ficção Científica", "Distopia"],
+    revisoes: [
+        {
+            comentario: "Um retrato assustadoramente preciso do totalitarismo.",
+            avaliacao: 5
+        },
+        {
+            comentario: "Incrivelmente relevante, mesmo décadas após sua publicação.",
+            avaliacao: 5
+        }
+                ]
+            }
+        ];
+        var livroemprestado = "Não";
+        if(livros[0].emprestado){
+            livroemprestado = "Sim"
+        }
+        console.log(livroemprestado);
+ console.log(`Título: ${livros[0].titulo}, 
+ Autor: ${livros[0].autor},
+  Ano: ${livros[0].ano}, 
+  Emprestado: ${livros[0].emprestado ? 'Sim' : 'Não'}, 
+  Categoria: ${livros[0].categorias[0]},
+   Avaliação: ${livros[0].revisoes[0].avaliacao} `);
+
+
+
+
+    </script>
+</body>
+</html>
